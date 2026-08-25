@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#031c35">
+  <meta name="description" content="Отдел цифровизации КазНИИОиР: ИТ-инфраструктура, цифровые сервисы, информационная безопасность, проекты и команда.">
+  <title>Отдел цифровизации | КазНИИОиР</title>
+  <link rel="preload" href="img/hero-digital-health.jpg" as="image" type="image/jpeg">
+  <link rel="stylesheet" href="css/digital-modern.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <canvas id="ambientWeb" class="ambient-web" aria-hidden="true"></canvas>
+  <canvas id="clickFx" class="click-fx" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="home">
+    <div class="header-inner shell">
+      <a class="brand" href="https://onco.kz/ru.html" target="_blank" rel="noopener" aria-label="Открыть официальный сайт КазНИИОиР">
+        <img src="img/kazi.png" alt="КазНИИОиР">
+        <span class="brand-copy"><strong>КазНИИОиР</strong><small>Отдел цифровизации</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#home">Главная</a>
+        <a href="#directions">Направления</a>
+        <a href="#projects">Проекты</a>
+        <a href="#team">Команда</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav-external" href="https://onco.kz/ru.html" target="_blank" rel="noopener">onco.kz <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <button class="readability-toggle" id="readabilityToggle" type="button" aria-pressed="false" title="Режим повышенной читаемости">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.7"/></svg>
+        <span>Читаемость</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-dark" aria-label="Презентация отдела цифровизации">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+      <div class="shell">
+        <div class="hero-slider" id="heroSlider" aria-roledescription="карусель" aria-label="Отдел цифровизации КазНИИОиР">
+          <div class="slider-progress" aria-hidden="true"><span></span></div>
+          <div class="slides" aria-live="off">
+            <article class="slide is-active slide-feature slide-photo-first" data-slide="0" aria-label="Слайд 1 из 4">
+              <img src="img/hero-digital-health.jpg" alt="Специалист работает с цифровой медицинской системой" fetchpriority="high">
+              <div class="slide-shade"></div>
+              <div class="slide-copy">
+                <span class="eyebrow light">KazIOR · Digital Health</span>
+                <h1>Отдел цифровизации <em>КазНИИОиР</em></h1>
+                <p>Технологии, которые помогают лечить: надёжная инфраструктура, цифровые сервисы, поддержка сотрудников и развитие современных медицинских систем.</p>
+                <div class="slide-actions">
+                  <a class="button button-primary" href="#directions">Направления <span>→</span></a>
+                  <a class="button button-glass" href="https://onco.kz/ru.html" target="_blank" rel="noopener noreferrer">Официальный сайт <span>↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="slide slide-feature slide-office" data-slide="1" aria-label="Слайд 2 из 4" aria-hidden="true">
+              <img src="img/about-digital-office.jpg" alt="Рабочее пространство отдела цифровизации КазНИИОиР">
+              <div class="slide-shade"></div>
+              <div class="slide-copy">
+                <span class="eyebrow light">Поддержка · автоматизация · сервис</span>
+                <h2>Единая ИТ-команда для ежедневной работы института</h2>
+                <p>Сопровождаем рабочие места, информационные системы и цифровые процессы, чтобы сотрудники могли получать помощь быстро и понятно.</p>
+                <a class="button button-primary" href="#team">Наша команда <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="slide slide-feature slide-infra" data-slide="2" aria-label="Слайд 3 из 4" aria-hidden="true">
+              <img src="img/hero-infrastructure.webp" alt="Современная серверная и ИТ-инфраструктура">
+              <div class="slide-shade"></div>
+              <div class="slide-copy">
+                <span class="eyebrow light">Сеть · серверы · безопасность</span>
+                <h2>Надёжная цифровая инфраструктура без лишней сложности</h2>
+                <p>Развиваем сетевую и серверную среду, повышаем устойчивость сервисов и защищаем данные медицинской организации.</p>
+                <a class="button button-primary" href="#projects">Цифровые проекты <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="slide slide-brand" data-slide="3" aria-label="Слайд 4 из 4" aria-hidden="true">
+              <picture>
+                <source srcset="img/digital-hero-cover.webp" type="image/webp">
+                <img src="img/digital-hero-cover.jpg" alt="Отдел цифровизации КазНИИОиР — технологии, которые помогают лечить">
+              </picture>
+              <div class="poster-cta">
+                <span class="glass-label"><i></i> Отдел цифровизации КазНИИОиР</span>
+                <div class="poster-actions">
+                  <a class="button button-primary" href="#projects">Наши проекты <span>→</span></a>
+                  <a class="button button-glass" href="https://onco.kz/ru.html" target="_blank" rel="noopener noreferrer">onco.kz <span>↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="slider-side slider-side-prev" type="button" data-slider-prev aria-label="Предыдущий слайд">‹</button>
+          <button class="slider-side slider-side-next" type="button" data-slider-next aria-label="Следующий слайд">›</button>
+
+          <div class="slider-thumbs" role="tablist" aria-label="Выбор слайда">
+            <button class="slider-thumb is-active" type="button" data-slider-dot="0" role="tab" aria-selected="true" aria-label="Слайд 1">
+              <img src="img/hero-digital-health.jpg" alt=""><span><b>01</b><strong>Digital Health</strong><small>Медицина и технологии</small></span>
+            </button>
+            <button class="slider-thumb" type="button" data-slider-dot="1" role="tab" aria-selected="false" aria-label="Слайд 2">
+              <img src="img/about-digital-office.jpg" alt=""><span><b>02</b><strong>Поддержка</strong><small>Команда и сервисы</small></span>
+            </button>
+            <button class="slider-thumb" type="button" data-slider-dot="2" role="tab" aria-selected="false" aria-label="Слайд 3">
+              <img src="img/hero-infrastructure.webp" alt=""><span><b>03</b><strong>Инфраструктура</strong><small>Сеть и безопасность</small></span>
+            </button>
+            <button class="slider-thumb" type="button" data-slider-dot="3" role="tab" aria-selected="false" aria-label="Слайд 4">
+              <img src="img/digital-hero-cover.webp" alt=""><span><b>04</b><strong>КазНИИОиР</strong><small>Технологии для лечения</small></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-strip" aria-label="Ключевые направления отдела">
+          <div class="hero-stat"><span>01</span><div><strong>Инфраструктура</strong><small>Сеть, серверы, рабочие места</small></div></div>
+          <div class="hero-stat"><span>02</span><div><strong>Безопасность</strong><small>Доступ, данные, устойчивость</small></div></div>
+          <div class="hero-stat"><span>03</span><div><strong>Цифровые сервисы</strong><small>Автоматизация процессов</small></div></div>
+          <div class="hero-stat"><span>04</span><div><strong>Поддержка</strong><small>Помощь сотрудникам</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" aria-labelledby="intro-title">
+      <div class="shell intro-grid">
+        <div>
+          <span class="eyebrow">О подразделении</span>
+          <h2 id="intro-title">Цифровая основа современной клиники</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Отдел цифровизации обеспечивает стабильную работу ИТ-сервисов института, поддерживает пользователей, развивает инфраструктуру и участвует во внедрении новых цифровых решений.</p>
+          <p>Приоритет — надёжность, информационная безопасность, удобство сотрудников и последовательное развитие технологической среды.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="directions" aria-labelledby="directions-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Основные направления</span>
+            <h2 id="directions-title">От инфраструктуры до цифровых сервисов</h2>
+          </div>
+          <p>Комплексная поддержка технологической среды института: сети, информационные системы, защита данных, автоматизация и пользовательская поддержка.</p>
+        </div>
+
+        <div class="direction-grid direction-grid-photo">
+          <article class="direction-card direction-blue">
+            <div class="direction-photo"><img src="img/hero-infrastructure.webp" alt="Серверная и сетевая инфраструктура" loading="lazy"><span class="card-index">01</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="6" rx="2"/><rect x="3" y="15" width="18" height="6" rx="2"/><path d="M7 6h.01M7 18h.01"/></svg></div><h3>ИТ-инфраструктура</h3><p>Серверы, сети, рабочие станции, Wi‑Fi, периферия и технологические сервисы института.</p><div class="card-line"></div></div>
+          </article>
+          <article class="direction-card direction-cyan">
+            <div class="direction-photo"><img src="img/hero-platform.webp" alt="Цифровая медицинская информационная система" loading="lazy"><span class="card-index">02</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></div><h3>Информационные системы</h3><p>Сопровождение медицинских и корпоративных систем, интеграций и цифровой документации.</p><div class="card-line"></div></div>
+          </article>
+          <article class="direction-card direction-green">
+            <div class="direction-photo"><img src="img/gallery-01.jpg" alt="Мониторинг цифровой среды и защита данных" loading="lazy"><span class="card-index">03</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v5c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-5"/></svg></div><h3>Информационная безопасность</h3><p>Контроль доступа, защита персональных данных, резервирование и снижение технологических рисков.</p><div class="card-line"></div></div>
+          </article>
+          <article class="direction-card direction-violet">
+            <div class="direction-photo"><img src="img/about-digital-office.jpg" alt="Специалисты технической поддержки" loading="lazy"><span class="card-index">04</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0M4 13v5a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 1Zm16 0v5a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 1Z"/></svg></div><h3>Техническая поддержка</h3><p>Оперативная помощь пользователям, диагностика, настройка оборудования и программного обеспечения.</p><div class="card-line"></div></div>
+          </article>
+          <a class="direction-card direction-orange direction-link" href="https://onco.kz/ru.html" target="_blank" rel="noopener noreferrer" aria-label="Перейти на официальный сайт КазНИИОиР">
+            <div class="direction-photo"><img src="img/digital-hero-cover.webp" alt="Официальный сайт КазНИИОиР" loading="lazy"><span class="card-index">05 ↗</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div><h3>Официальный сайт</h3><p>Прямой переход на <strong>https://onco.kz/ru.html</strong> — официальный веб‑ресурс института.</p><div class="card-line"></div></div>
+          </a>
+          <article class="direction-card direction-teal">
+            <div class="direction-photo"><img src="img/hero-analytics-team.jpg" alt="Разработка и аналитика цифровых сервисов" loading="lazy"><span class="card-index">06</span></div>
+            <div class="direction-body"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="m14 4 6 6-10 10H4v-6L14 4Z"/><path d="m13 5 6 6M8 16l-1 5"/></svg></div><h3>Развитие сервисов</h3><p>Проектирование решений, которые автоматизируют процессы и улучшают взаимодействие подразделений.</p><div class="card-line"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects section-dark" id="projects" aria-labelledby="projects-title">
+      <div class="projects-noise" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="section-heading section-heading-dark">
+          <div>
+            <span class="eyebrow light">Цифровые проекты</span>
+            <h2 id="projects-title">Сервисы вокруг реальных рабочих процессов</h2>
+          </div>
+          <p>Проектные направления отдела — от внутренних заявок до навигации и сервисов взаимодействия с пациентами.</p>
+        </div>
+
+        <div class="project-grid project-grid-photo">
+          <article class="project-card project-main">
+            <div class="project-photo"><img src="img/gallery-03.jpg" alt="Рабочая панель службы ИТ-заявок" loading="lazy"><div class="project-photo-shade"></div><div class="project-top"><span class="project-status"><i></i> Проект</span><span class="project-number">01</span></div></div>
+            <div class="project-content"><h3>Единая служба заявок</h3><p>Централизованный канал для регистрации, маршрутизации и контроля ИТ-заявок сотрудников.</p><div class="tags"><span>HelpDesk</span><span>Статусы</span><span>Отчётность</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-photo"><img src="img/gallery-02.jpg" alt="Цифровая карта и аналитические панели" loading="lazy"><div class="project-photo-shade"></div><div class="project-top"><span class="project-status"><i></i> Проект</span><span class="project-number">02</span></div></div>
+            <div class="project-content"><h3>Навигация по институту</h3><p>Понятная цифровая карта для поиска корпусов, кабинетов и построения маршрута.</p><div class="tags"><span>Карта</span><span>Маршрут</span><span>Mobile</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-photo"><img src="img/about-digital-office.jpg" alt="Цифровой сервис для организации потока посетителей" loading="lazy"><div class="project-photo-shade"></div><div class="project-top"><span class="project-status"><i></i> Концепция</span><span class="project-number">03</span></div></div>
+            <div class="project-content"><h3>Электронная очередь</h3><p>Организация потока посетителей, электронные талоны и удобная работа операторов.</p><div class="tags"><span>Очередь</span><span>Табло</span><span>Сервис</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-photo"><img src="img/hero-digital-health.jpg" alt="Искусственный интеллект в медицинской цифровой среде" loading="lazy"><div class="project-photo-shade"></div><div class="project-top"><span class="project-status"><i></i> Развитие</span><span class="project-number">04</span></div></div>
+            <div class="project-content"><h3>AI и интеллектуальные сервисы</h3><p>Инструменты для поиска информации, консультационной поддержки и автоматизации рутинных операций.</p><div class="tags"><span>AI</span><span>Ассистент</span><span>Автоматизация</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="team" aria-labelledby="team-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Наша команда</span>
+            <h2 id="team-title">Люди, которые держат цифровую среду в движении</h2>
+          </div>
+          <p>Нажмите на любую карточку сотрудника — профиль откроется целиком. Фотография показывается полностью в круглом портрете.</p>
+        </div>
+
+        <div class="team-stage">
+          <article class="team-card" data-profile="aizhan" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Баракбаевой Айжан Айтулгановны">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-aizhan-clean.jpg" alt="Баракбаева Айжан Айтулгановна" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Руководитель отдела</span><h3>Баракбаева<br>Айжан Айтулгановна</h3><button type="button" class="team-more" data-open-profile="aizhan">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card" data-profile="alma" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Муратовой Алмы Зульфухаровны">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-alma-clean.jpg" alt="Муратова Алма Зульфухаровна" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Инженер-программист</span><h3>Муратова<br>Алма Зульфухаровна</h3><button type="button" class="team-more" data-open-profile="alma">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card" data-profile="elnur" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Нұрқадыр Елнұр Серікұлы">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-elnur-clean.jpg" alt="Нұрқадыр Елнұр Серікұлы" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Инженер-программист</span><h3>Нұрқадыр<br>Елнұр Серікұлы</h3><button type="button" class="team-more" data-open-profile="elnur">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card" data-profile="altair" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Мелиса Альтаира Сержановича">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-altair-clean.jpg" alt="Мелис Альтаир Сержанович" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Инженер-программист</span><h3>Мелис<br>Альтаир Сержанович</h3><button type="button" class="team-more" data-open-profile="altair">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card team-card-placeholder" data-profile="zhainar" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Жангербаевой Жайнар Ельшатовны">
+            <div class="team-halo"></div><div class="team-photo-wrap"><div class="initials" aria-label="Фото сотрудника не добавлено"><span>ЖЖ</span></div></div>
+            <div class="team-meta"><span class="team-role">Инженер-программист</span><h3>Жангербаева<br>Жайнар Ельшатовна</h3><button type="button" class="team-more" data-open-profile="zhainar">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card" data-profile="evgeniy" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Тимченко Евгения Юрьевича">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-evgeniy-clean.jpg" alt="Тимченко Евгений Юрьевич" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Системный администратор</span><h3>Тимченко<br>Евгений Юрьевич</h3><button type="button" class="team-more" data-open-profile="evgeniy">Подробнее <span>↗</span></button></div>
+          </article>
+          <article class="team-card" data-profile="kuanysh" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Открыть профиль Досова Қуаныш Рыспекұлы">
+            <div class="team-halo"></div><div class="team-photo-wrap"><img src="img/team-kuanysh-clean.jpg" alt="Досов Қуаныш Рыспекұлы" loading="lazy"></div>
+            <div class="team-meta"><span class="team-role">Инженер-программист</span><h3>Досов<br>Қуаныш Рыспекұлы</h3><button type="button" class="team-more" data-open-profile="kuanysh">Подробнее <span>↗</span></button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section section-soft" id="contacts" aria-labelledby="contacts-title">
+      <div class="shell">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <span class="eyebrow light">Контакты</span>
+            <h2 id="contacts-title">АО «Казахский научно-исследовательский институт онкологии и радиологии»</h2>
+            <p>Официальные контакты института и быстрый переход на основной сайт.</p>
+            <a class="button button-primary" href="https://onco.kz/ru.html" target="_blank" rel="noopener">Перейти на официальный сайт <span>↗</span></a>
+          </div>
+          <div class="contact-list">
+            <a href="tel:+77273109023"><span class="contact-icon">☎</span><div><small>Телефон</small><strong>+7 (727) 310-90-23</strong></div><b>↗</b></a>
+            <a href="mailto:kazior@onco.kz"><span class="contact-icon">@</span><div><small>Электронная почта</small><strong>kazior@onco.kz</strong></div><b>↗</b></a>
+            <a href="https://onco.kz/ru.html" target="_blank" rel="noopener"><span class="contact-icon">◎</span><div><small>Официальный сайт</small><strong>https://onco.kz/ru.html</strong></div><b>↗</b></a>
+            <div class="contact-static"><span class="contact-icon">⌖</span><div><small>Адрес</small><strong>г. Алматы, пр. Абая, 91</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="img/kazi.png" alt="КазНИИОиР">
+        <p>Цифровая инфраструктура и сервисы для устойчивой работы института.</p>
+      </div>
+      <div class="footer-links"><strong>Навигация</strong><a href="#directions">Направления</a><a href="#projects">Проекты</a><a href="#team">Команда</a><a href="#contacts">Контакты</a></div>
+      <div class="footer-links"><strong>Институт</strong><a href="https://onco.kz/ru.html" target="_blank" rel="noopener">https://onco.kz/ru.html ↗</a><a href="mailto:kazior@onco.kz">kazior@onco.kz</a><a href="tel:+77273109023">+7 (727) 310-90-23</a></div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>© <span id="currentYear"></span> КазНИИОиР · Отдел цифровизации</span>
+      <span>Дизайн и разработка: <strong>Тимченко Евгений Юрьевич</strong></span>
+    </div>
+  </footer>
+
+  <div class="profile-dialog" id="profileDialog" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="profileName">
+    <div class="profile-backdrop" data-close-profile></div>
+    <div class="profile-panel" role="document">
+      <button class="profile-close" type="button" data-close-profile aria-label="Закрыть профиль">×</button>
+      <div class="profile-image" id="profileImage"></div>
+      <div class="profile-content">
+        <span class="eyebrow" id="profileRole">Сотрудник</span>
+        <h2 id="profileName">Профиль сотрудника</h2>
+        <div id="profileBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Наверх">↑</button>
+  <script src="js/digital-modern.js"></script>
+</body>
+</html>
