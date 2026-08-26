@@ -1,0 +1,19 @@
+lt="Информационная безопасность и защищённый цифровой контур" loading="lazy">
+      <span class="card-index">04</span>
+      <div class="direction-icon"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.3c0 4.8 3.2 8 7.5 9.7 4.3-1.7 7.5-4.9 7.5-9.7V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.6-5"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>Информационная безопасность</h3><p>Контроль доступа, защита персональных данных и культура безопасной работы.</p><span class="card-arrow">↗</span></div>
+  </article>
+  <article class="direction-card reveal">
+    <div class="direction-media">
+      <img src="img/hero-analytics-team.jpg" alt="Техническая поддержка и обучение сотрудников" loading="lazy">
+      <span class="card-index">05</span>
+      <div class="direction-icon"><svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v5a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 1Zm16 0v5a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 1Z"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>Поддержка и обучение</h3><p>Оперативно решаем инциденты и помогаем сотрудникам уверенно работать с сервисами.</p><span class="card-arrow">↗</span></div>
+  </article>
+  <article class="direction-card direction-card-cta reveal">
+    <div class="direction-media direction-media-logo">
+      <img src="img/kazi.png" alt="Kazakh Oncology Institute" loading="lazy">
+      <span class="card-index">06</span>
+     
