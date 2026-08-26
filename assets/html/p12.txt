@@ -1,0 +1,13 @@
+svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <div class="project-content"><span>Информационная система</span><h3>Единая медицинская информационная среда</h3><p>Цифровая платформа для управления клиническими процессами и данными пациентов.</p><a href="#contacts" aria-label="Подробнее о медицинской информационной среде">→</a></div>
+          </article>
+          <article class="project-card reveal">
+            <img src="img/hero-analytics-team.jpg" alt="Аналитическая платформа медицинских данных" width="1920" height="816" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/></svg></div>
+            <div class="project-content"><span>Аналитика</span><h3>Дашборды для принятия решений</h3><p>Наглядные показатели для подразделений и руководителей.</p><a href="#contacts" aria-label="Подробнее об аналитической платформе">→</a></div>
+          </article>
+          <article class="project-card reveal">
+            <img src="img/hero-infrastructure.webp" alt="Современная серверная инфраструктура" width="1920" height="817" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.3c0 4.8 3.
