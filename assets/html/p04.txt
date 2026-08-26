@@ -1,0 +1,24 @@
+hero-slide" data-slide="1" aria-hidden="true">
+          <img src="img/hero-platform.webp" alt="Цифровая платформа медицинской аналитики" width="1500" height="873" loading="lazy">
+          <div class="hero-shade"></div>
+          <div class="shell hero-content">
+            <div class="hero-copy">
+              <span class="hero-kicker"><i></i> Данные и аналитика</span>
+              <h2>Данные превращаем<br><em>в понятные решения</em></h2>
+              <p>Развиваем медицинские информационные системы и аналитику, которые поддерживают клинические и управленческие процессы.</p>
+              <div class="hero-buttons">
+                <a class="button button-primary" href="#projects">Смотреть проекты <span>→</span></a>
+                <a class="button button-ghost" href="#about">Как мы работаем</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide" data-slide="2" aria-hidden="true">
+          <img src="img/hero-infrastructure.webp" alt="Защищённая серверная инфраструктура медицинского института" width="1920" height="817" loading="lazy">
+          <div class="hero-shade"></div>
+          <div class="shell hero-content">
+            <div class="hero-copy">
+              <span class="hero-kicker"><i></i> Надёжная инфраструктура</span>
+              <h2>Стабильность.<br><em>Безопасность. Поддержка.</em></h2>
+              
