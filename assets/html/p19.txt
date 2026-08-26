@@ -1,0 +1,23 @@
+tact-orb" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#top"><img src="img/kazi.png" alt="Kazakh Oncology Institute" width="250" height="110"></a>
+        <p>Цифровые технологии<br>для здоровья человека.</p>
+      </div>
+      <div class="footer-links"><h3>Навигация</h3><a href="#about">О нас</a><a href="#directions">Направления</a><a href="#projects">Проекты</a><a href="#team">Команда</a></div>
+      <div class="footer-links"><h3>Институт</h3><a href="https://onco.kz/ru.html" target="_blank" rel="noopener">Официальный сайт</a><a href="#contacts">Контакты</a><a href="#contacts">Обратная связь</a></div>
+      <div class="footer-note"><span>Алматы · Казахстан</span><strong>43.2389° N<br>76.8897° E</strong></div>
+    </div>
+    <div class="shell footer-bottom"><span>© 2026 АО «КазНИИОиР»</span><span>Дизайн и разработка: Тимченко Евгений Юрьевич</span><a href="#top">Наверх ↑</a></div>
+  </footer>
+
+  <div class="music-toast" id="musicToast" role="status" aria-live="polite">Музыка готова · нажмите, если браузер заблокировал автозапуск</div>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/music-fallback.js" defer></script>
+</body>
+</html>
