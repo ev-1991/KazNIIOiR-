@@ -1,0 +1,15 @@
+ture-copy">
+              <span class="team-status"><i></i> Руководитель отдела</span>
+              <div class="team-counter"><b id="teamCurrent">01</b><span>/ 07</span></div>
+              <h3 id="teamFeatureName">Баракбаева<br>Айжан Айтулгановна</h3>
+              <p class="team-role" id="teamFeatureRole">Руководитель отдела цифровизации</p>
+              <p class="team-bio" id="teamFeatureBio">Организует работу команды и развитие цифровой среды института. Специалист по автоматизации и управлению.</p>
+              <a href="mailto:kazior@onco.kz" class="team-contact">Связаться с отделом <span>↗</span></a>
+            </div>
+          </article>
+
+          <div class="team-roster" aria-label="Сотрудники отдела">
+            <button class="member-card is-active" type="button" data-index="1" data-image="img/team-aizhan-clean.jpg" data-alt="Баракбаева Айжан Айтулгановна" data-name="Баракбаева|Айжан Айтулгановна" data-role="Руководитель отдела цифровизации" data-bio="Организует работу команды и развитие цифровой среды института. Специалист по автоматизации и управлению.">
+              <img src="img/team-aizhan-clean.jpg" alt="" width="640" height="800"><span><b>Айжан Баракбаева</b><small>Руководитель отдела</small></span><i>01</i>
+            </button>
+            <button class="member-card" type="button" data-index="2" data-image="img/team-alma-clean.jpg" data-alt="Муратова Алм
