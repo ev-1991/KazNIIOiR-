@@ -1,0 +1,25 @@
+     </div>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="shell about-layout">
+        <div class="about-intro reveal">
+          <span class="section-tag">01 · О нас</span>
+          <h2>Технологии<br><span>на стороне человека</span></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lead">Мы создаём цифровую основу, на которую ежедневно опираются врачи, исследователи и административные подразделения института.</p>
+          <p>От устойчивой инфраструктуры до удобных сервисов — каждое решение должно быть понятным, безопасным и действительно полезным в работе.</p>
+          <a class="text-link" href="#directions">Как устроена наша работа <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="shell value-board reveal">
+        <div class="value-visual">
+          <div class="visual-topline"><span>Единая цифровая среда</span><span class="live-dot">Системы работают</span></div>
+          <div class="visual-grid">
+            <div class="pulse-card">
+              <div class="pulse-head"><span><i class="live-signal"></i> Активность сервисов</span><b id="serviceUptime">98.7%</b></div>
+              <div class="service-live-row" aria-label="Состояние цифровой среды">
+                <span class="service-clock"><small>LIVE</small><b id="serviceLiveTime">--:--</b></span>
+                <span class="serv
