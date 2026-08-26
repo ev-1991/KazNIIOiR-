@@ -1,0 +1,17 @@
+2 8 7.5 9.7 4.3-1.7 7.5-4.9 7.5-9.7V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.6-5"/></svg></div>
+            <div class="project-content"><span>Инфраструктура</span><h3>Защищённый цифровой контур</h3><p>Стабильная сеть, серверные мощности и контроль доступа.</p><a href="#contacts" aria-label="Подробнее о цифровой инфраструктуре">→</a></div>
+          </article>
+          <article class="project-card reveal">
+            <img src="img/hero-analytics-team.jpg" alt="Служба технической поддержки цифровой среды" width="1920" height="816" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v5a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 1Zm16 0v5a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 1Z"/></svg></div>
+            <div class="project-content"><span>Поддержка</span><h3>Единая служба HelpDesk</h3><p>Регистрация заявок, маршрутизация, контроль исполнения и прозрачная поддержка сотрудников.</p><a href="#contacts" aria-label="Подробнее о службе HelpDesk">→</a></div>
+          </article>
+        </div>
+        <div class="drag-note"><i></i> Листайте проекты</div>
+      </div>
+    </section>
+
+    <section class="impact-section" aria-label="Результаты отдела">
+      <div class="shell impact-grid">
+        <div class="impact-copy reveal"><span class="section-tag section-tag-li
