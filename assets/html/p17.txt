@@ -1,0 +1,9 @@
+елис</b><small>Инженер-программист</small></span><i>04</i>
+            </button>
+            <button class="member-card member-card-initials" type="button" data-index="5" data-image="" data-alt="Жангербаева Жайнар Ельшатовна" data-initials="ЖЖ" data-name="Жангербаева|Жайнар Ельшатовна" data-role="Инженер-программист" data-bio="Сопровождает информационные системы и помогает развивать цифровые процессы. Специалист в области информационных систем.">
+              <span class="initials-avatar">ЖЖ</span><span><b>Жайнар Жангербаева</b><small>Инженер-программист</small></span><i>05</i>
+            </button>
+            <button class="member-card" type="button" data-index="6" data-image="img/team-evgeniy-clean.jpg" data-alt="Тимченко Евгений Юрьевич" data-name="Тимченко|Евгений Юрьевич" data-role="Системный администратор" data-bio="Отвечает за стабильную работу инфраструктуры и автоматизированных систем обработки информации.">
+              <img src="img/team-evgeniy-clean.jpg" alt="" width="640" height="800"><span><b>Евгений Тимченко</b><small>Системный администратор</small></span><i>06</i>
+            </button>
+            <button class="member-card" type="button" data-index="7" data-image="img/team-kuanysh-clean.jpg" data-alt="Досов Қуаныш Рыспекұлы" data-name="Досов|Қуаныш Рыспекұлы" data-role="Инженер-программист" data-bio="Развивает программные решения и поддерживает внутренние с
