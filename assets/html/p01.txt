@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#031d32">
+  <meta name="description" content="Отдел цифровизации КазНИИ онкологии и радиологии — информационные системы, аналитика, цифровые сервисы и безопасная ИТ-инфраструктура.">
+  <meta property="og:title" content="Отдел цифровизации КазНИИОиР">
+  <meta property="og:description" content="Технологии, которые помогают лечить.">
+  <meta property="og:image" content="img/digital-hero-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>KazIOR / КазНИИОиР — Отдел цифровизации 2026</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23031d32'/%3E%3Cpath d='M18 18v28M18 32l18-14M18 32l20 14' stroke='%232de1d1' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='44' cy='18' r='4' fill='%2311c7e9'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <canvas class="web-canvas" id="webCanvas" aria-hidden="true"></canvas>
+  <svg class="calm-lightning" viewBox="0 0 170 390" aria-hidden="true">
+    <path d="M112 4 63 147l48-14-62 127 46-15-43 142 93-177-55 17 57
