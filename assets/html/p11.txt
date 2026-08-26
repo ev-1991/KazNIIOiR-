@@ -1,0 +1,23 @@
+  <div class="direction-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>Официальный сайт</h3><p>Официальный веб‑ресурс КазНИИОиР с актуальной информацией для пациентов и специалистов.</p><a href="https://onco.kz/ru.html" target="_blank" rel="noopener">Перейти на onco.kz <span>↗</span></a></div>
+  </article>
+</div>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects">
+      <div class="shell">
+        <div class="section-heading project-heading reveal">
+          <div><span class="section-tag">03 · Проекты</span><h2>Решения, которые<br><span>работают каждый день</span></h2></div>
+          <div class="project-controls">
+            <button class="round-arrow project-prev" type="button" aria-label="Предыдущий проект">←</button>
+            <button class="round-arrow project-next" type="button" aria-label="Следующий проект">→</button>
+          </div>
+        </div>
+
+        <div class="project-slider" id="projectSlider">
+          <article class="project-card reveal">
+            <img src="img/hero-platform.webp" alt="Интерфейс медицинской информационной системы" width="1500" height="873" loading="lazy">
+            <div class="project-overlay"></div>
+            <div class="project-icon" aria-hidden="true"><
