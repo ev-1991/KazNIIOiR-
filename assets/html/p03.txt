@@ -1,0 +1,28 @@
+r-cta" href="#contacts">Связаться <span>↗</span></a>
+        <button class="menu-toggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Главные направления отдела">
+      <div class="hero-slider" id="heroSlider">
+        <article class="hero-slide is-active" data-slide="0" aria-hidden="false">
+          <img src="img/hero-analytics-team.jpg" alt="Специалисты анализируют медицинские данные в цифровом центре" width="1920" height="816" fetchpriority="high">
+          <div class="hero-shade"></div>
+          <div class="shell hero-content">
+            <div class="hero-copy">
+              <span class="hero-kicker"><i></i> KazIOR · Digital health</span>
+              <h1>Цифровая среда,<br><em>которая помогает лечить</em></h1>
+              <p>Соединяем медицину, данные и технологии, чтобы у специалистов было больше времени на главное — помощь пациентам.</p>
+              <div class="hero-buttons">
+                <a class="button button-primary" href="#directions">Наши направления <span>→</span></a>
+                <a class="button button-ghost" href="#team">Познакомиться с командой</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="
