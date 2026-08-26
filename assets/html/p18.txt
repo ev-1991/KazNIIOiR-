@@ -1,0 +1,23 @@
+ервисы. Специалист по вычислительной технике и программному обеспечению.">
+              <img src="img/team-kuanysh-clean.jpg" alt="" width="800" height="1200"><span><b>Қуаныш Досов</b><small>Инженер-программист</small></span><i>07</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contacts">
+      <div class="shell contact-card reveal">
+        <div class="contact-copy">
+          <span class="section-tag section-tag-light">05 · Контакты</span>
+          <h2>Есть цифровая задача?<br><span>Давайте обсудим.</span></h2>
+          <p>Расскажите, что нужно улучшить или автоматизировать. Мы поможем найти рабочее решение.</p>
+          <a class="button button-primary" href="mailto:kazior@onco.kz">Написать нам <span>↗</span></a>
+        </div>
+        <div class="contact-details">
+          <a href="tel:+77273109023"><small>Телефон</small><strong>+7 (727) 310-90-23</strong><span>↗</span></a>
+          <a href="mailto:kazior@onco.kz"><small>Электронная почта</small><strong>kazior@onco.kz</strong><span>↗</span></a>
+          <a href="https://onco.kz/ru.html" target="_blank" rel="noopener"><small>Официальный сайт</small><strong>onco.kz/ru.html</strong><span>↗</span></a>
+          <div><small>Адрес</small><strong>Алматы, проспект Абая, 91</strong><span>●</span></div>
+        </div>
+        <div class="con
