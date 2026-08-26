@@ -1,0 +1,8 @@
+а Зульфухаровна" data-name="Муратова|Алма Зульфухаровна" data-role="Инженер-программист · кандидат биологических наук" data-bio="Развивает цифровые решения на стыке биологии и информационных технологий. Специалист с фундаментальной научной подготовкой.">
+              <img src="img/team-alma-clean.jpg" alt="" width="640" height="800"><span><b>Алма Муратова</b><small>Инженер-программист</small></span><i>02</i>
+            </button>
+            <button class="member-card" type="button" data-index="3" data-image="img/team-elnur-clean.jpg" data-alt="Нұрқадыр Елнұр Серікұлы" data-name="Нұрқадыр|Елнұр Серікұлы" data-role="Инженер-программист" data-bio="Работает над прикладными сервисами и интерфейсами. Специализация — компьютерная физика и разработка программных решений.">
+              <img src="img/team-elnur-clean.jpg" alt="" width="640" height="800"><span><b>Елнұр Нұрқадыр</b><small>Инженер-программист</small></span><i>03</i>
+            </button>
+            <button class="member-card" type="button" data-index="4" data-image="img/team-altair-clean.jpg" data-alt="Мелис Альтаир Сержанович" data-name="Мелис|Альтаир Сержанович" data-role="Инженер-программист" data-bio="Участвует в разработке и сопровождении внутренних цифровых сервисов института. Техник-программист по образованию.">
+              <img src="img/team-altair-clean.jpg" alt="" width="640" height="800"><span><b>Альтаир М
