@@ -1,0 +1,23 @@
+>
+          <article><span>01</span><div><h3>Надёжность</h3><p>Системы доступны тогда, когда они нужны специалистам.</p></div></article>
+          <article><span>02</span><div><h3>Безопасность</h3><p>Данные пациентов и сотрудников остаются под защитой.</p></div></article>
+          <article><span>03</span><div><h3>Развитие</h3><p>Внедряем технологии с измеримой практической пользой.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-directions" id="directions">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div><span class="section-tag section-tag-light">02 · Направления</span><h2>Всё, что держит<br><span>цифровой контур</span></h2></div>
+          <p>От серверной до рабочего места врача — команда берёт на себя полный цикл цифровой поддержки.</p>
+        </div>
+
+<div class="direction-grid">
+  <article class="direction-card reveal">
+    <div class="direction-media">
+      <img src="img/hero-infrastructure.webp" alt="Серверная и сетевая инфраструктура" loading="lazy">
+      <span class="card-index">01</span>
+      <div class="direction-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h7M11 17h7"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>ИТ-инфраструктура</h3><p>Серверы, 
