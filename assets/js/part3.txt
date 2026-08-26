@@ -1,0 +1,102 @@
+    context.stroke();
+      context.globalAlpha = .55;
+      context.beginPath();
+      context.arc(wave.x, wave.y, radius * .67, 0, Math.PI * 2);
+      context.stroke();
+      context.restore();
+    };
+    const drawBubble = (bubble, time) => {
+      const progress = (time - bubble.born) / bubble.duration;
+      if (progress >= 1) return;
+      const ease = 1 - Math.pow(1 - progress, 2);
+      const x = bubble.x + bubble.vx * progress + Math.sin(progress * 8 + bubble.wobble) * 8;
+      const y = bubble.y + bubble.vy * progress - 44 * ease;
+      const radius = bubble.radius * (1 + progress * .42);
+      const alpha = (1 - progress) * .48;
+      const gradient = context.createRadialGradient(x - radius * .35, y - radius * .35, 1, x, y, radius);
+      gradient.addColorStop(0, `rgba(215, 252, 255, ${alpha * .85})`);
+      gradient.addColorStop(.55, `rgba(76, 218, 238, ${alpha * .2})`);
+      gradient.addColorStop(1, 'rgba(40, 191, 220, 0)');
+      context.save();
+      context.fillStyle = gradient;
+      context.strokeStyle = `rgba(154, 242, 250, ${alpha})`;
+      context.lineWidth = .75;
+      context.beginPath();
+      context.arc(x, y, radius, 0, Math.PI * 2);
+      context.fill();
+      context.stroke();
+      context.restore();
+    };
+    const drawWeb = time => {
+      context.clearRect(0, 0, width, height);
+      particles.forEach((particle, index) => {
+        if (!reducedMotion) {
+          particle.x += particle.vx + Math.sin(time * .00025 + particle.phase) * .025;
+          particle.y += particle.vy + Math.cos(time * .0002 + particle.phase) * .025;
+          if (particle.x < -10) particle.x = width + 10;
+          if (particle.x > width + 10) particle.x = -10;
+          if (particle.y < -10) particle.y = height + 10;
+          if (particle.y > height + 10) particle.y = -10;
+        }
+        clickWaves.forEach(wave => {
+          const progress = Math.min(1, Math.max(0, (time - wave.born) / wave.duration));
+          const dx = particle.x - wave.x;
+          const dy = particle.y - wave.y;
+          const distance = Math.hypot(dx, dy) || 1;
+          if (distance < 230 && progress < 1) {
+            const phase = progress < .58 ? 1 : -1;
+            const strength = Math.sin(Math.PI * progress) * (1 - distance / 230) * .85 * phase;
+            particle.x += (dx / distance) * strength * 4.8;
+            particle.y += (dy / distance) * strength * 4.8;
+          }
+        });
+        for (let otherIndex = index + 1; otherIndex < particles.length; otherIndex += 1) {
+          const other = particles[otherIndex];
+          const distance = Math.hypot(particle.x - other.x, particle.y - other.y);
+          if (distance < 138) drawLine(particle, other, (1 - distance / 138) * .26);
+        }
+        if (pointer.active) {
+          const pointerDistance = Math.hypot(particle.x - pointer.x, particle.y - pointer.y);
+          if (pointerDistance < 235) {
+            drawLine(particle, pointer, (1 - pointerDistance / 235) * .58, .75);
+            if (!reducedMotion && pointerDistance > 45) {
+              particle.vx += (pointer.x - particle.x) * .000004;
+              particle.vy += (pointer.y - particle.y) * .000004;
+              particle.vx *= .997;
+              particle.vy *= .997;
+            }
+          }
+        }
+        context.beginPath();
+        context.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2);
+        context.fillStyle = pointer.active ? 'rgba(68, 230, 237, .58)' : 'rgba(34, 196, 220, .34)';
+        context.fill();
+      });
+      clickWaves.forEach(wave => drawClickWave(wave, time));
+      bubbles.forEach(bubble => drawBubble(bubble, time));
+      flashes.forEach(flash => drawLightning(flash, time));
+      clickWaves = clickWaves.filter(wave => time - wave.born < wave.duration);
+      bubbles = bubbles.filter(bubble => time - bubble.born < bubble.duration);
+      flashes = flashes.filter(flash => time - flash.born < 650);
+      animationFrame = requestAnimationFrame(drawWeb);
+    };
+    window.addEventListener('pointermove', event => {
+      pointer.x = event.clientX;
+      pointer.y = event.clientY;
+      pointer.active = true;
+    }, { passive: true });
+    window.addEventListener('pointerdown', event => {
+      if (event.button !== undefined && event.button !== 0) return;
+      if (!reducedMotion) spawnClickEffect(event.clientX, event.clientY);
+    }, { passive: true });
+    document.addEventListener('pointerleave', () => { pointer.active = false; });
+    window.addEventListener('blur', () => { pointer.active = false; });
+    window.addEventListener('resize', resizeCanvas, { passive: true });
+    resizeCanvas();
+    animationFrame = requestAnimationFrame(drawWeb);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) cancelAnimationFrame(animationFrame);
+      else animationFrame = requestAnimationFrame(drawWeb);
+    });
+  }
+})();

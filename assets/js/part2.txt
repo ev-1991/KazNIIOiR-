@@ -1,0 +1,206 @@
+t.clientX - rect.left}px`);
+      card.style.setProperty('--my', `${event.clientY - rect.top}px`);
+    });
+  });
+  const projectSlider = document.getElementById('projectSlider');
+  const scrollProjects = direction => {
+    if (!projectSlider) return;
+    const card = projectSlider.querySelector('.project-card');
+    const distance = card ? card.getBoundingClientRect().width + 15 : projectSlider.clientWidth * .82;
+    projectSlider.scrollBy({ left: distance * direction, behavior: reducedMotion ? 'auto' : 'smooth' });
+  };
+  document.querySelector('.project-prev')?.addEventListener('click', () => scrollProjects(-1));
+  document.querySelector('.project-next')?.addEventListener('click', () => scrollProjects(1));
+  const memberCards = [...document.querySelectorAll('.member-card')];
+  const featurePhoto = document.querySelector('.team-feature-photo');
+  const featureName = document.getElementById('teamFeatureName');
+  const featureRole = document.getElementById('teamFeatureRole');
+  const featureBio = document.getElementById('teamFeatureBio');
+  const featureCurrent = document.getElementById('teamCurrent');
+  const featureStatus = document.querySelector('.team-status');
+  let activeMember = 1;
+  const buildFeatureImage = card => {
+    if (!featurePhoto) return;
+    const source = card.dataset.image;
+    const alt = card.dataset.alt || '';
+    const initials = card.dataset.initials || '';
+    featurePhoto.classList.add('is-changing');
+    window.setTimeout(() => {
+      if (source) {
+        const image = document.createElement('img');
+        image.src = source;
+        image.alt = alt;
+        image.width = 800;
+        image.height = 1000;
+        featurePhoto.replaceChildren(image);
+      } else {
+        const placeholder = document.createElement('div');
+        placeholder.className = 'initials-feature';
+        placeholder.setAttribute('role', 'img');
+        placeholder.setAttribute('aria-label', alt);
+        placeholder.textContent = initials;
+        featurePhoto.replaceChildren(placeholder);
+      }
+      requestAnimationFrame(() => featurePhoto.classList.remove('is-changing'));
+    }, reducedMotion ? 0 : 150);
+  };
+  const selectMember = card => {
+    const index = Number(card.dataset.index || 1);
+    if (activeMember === index && card.classList.contains('is-active')) return;
+    activeMember = index;
+    memberCards.forEach(member => member.classList.toggle('is-active', member === card));
+    buildFeatureImage(card);
+    const nameParts = (card.dataset.name || '').split('|');
+    if (featureName) {
+      featureName.replaceChildren(document.createTextNode(nameParts[0] || ''));
+      if (nameParts[1]) {
+        featureName.appendChild(document.createElement('br'));
+        featureName.appendChild(document.createTextNode(nameParts[1]));
+      }
+    }
+    if (featureRole) featureRole.textContent = card.dataset.role || '';
+    if (featureBio) featureBio.textContent = card.dataset.bio || '';
+    if (featureCurrent) featureCurrent.textContent = formatNumber(index);
+    if (featureStatus) {
+      const dot = document.createElement('i');
+      featureStatus.replaceChildren(dot, document.createTextNode(card.dataset.role || 'Специалист отдела'));
+    }
+  };
+  memberCards.forEach(card => {
+    card.addEventListener('click', () => {
+      selectMember(card);
+      card.classList.remove('is-clicked');
+      void card.offsetWidth;
+      card.classList.add('is-clicked');
+      window.setTimeout(() => card.classList.remove('is-clicked'), 620);
+    });
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        selectMember(card);
+        return;
+      }
+      if (!['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].includes(event.key)) return;
+      event.preventDefault();
+      const current = memberCards.indexOf(card);
+      const direction = ['ArrowRight', 'ArrowDown'].includes(event.key) ? 1 : -1;
+      const next = memberCards[(current + direction + memberCards.length) % memberCards.length];
+      next.focus();
+    });
+  });
+  const uptimeValue = document.getElementById('serviceUptime');
+  const liveTime = document.getElementById('serviceLiveTime');
+  const loadValue = document.getElementById('serviceLoad');
+  const statusItems = [...document.querySelectorAll('.status-item')];
+  let dashboardTick = 0;
+  const updateLiveDashboard = () => {
+    const now = new Date();
+    if (liveTime) liveTime.textContent = now.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+    const uptime = 98.7 + Math.sin(dashboardTick * .7) * .16 + Math.sin(dashboardTick * .19) * .07;
+    if (uptimeValue) uptimeValue.textContent = `${Math.max(98.4, Math.min(99.1, uptime)).toFixed(1)}%`;
+    const load = 42 + Math.round(Math.sin(dashboardTick * .55) * 7 + Math.sin(dashboardTick * .21) * 3);
+    if (loadValue) loadValue.textContent = `${Math.max(29, Math.min(58, load))}%`;
+    statusItems.forEach((item, index) => item.classList.toggle('is-live', index === dashboardTick % Math.max(1, statusItems.length)));
+    dashboardTick += 1;
+  };
+  updateLiveDashboard();
+  window.setInterval(updateLiveDashboard, 1800);
+  const canvas = document.getElementById('webCanvas');
+  const context = canvas?.getContext('2d');
+  if (canvas && context) {
+    const pointer = { x: -1000, y: -1000, active: false };
+    let width = 0;
+    let height = 0;
+    let ratio = 1;
+    let particles = [];
+    let flashes = [];
+    let clickWaves = [];
+    let bubbles = [];
+    let animationFrame = 0;
+    const makeParticles = () => {
+      const amount = reducedMotion ? 18 : (width < 700 ? 31 : Math.min(72, Math.round(width / 23)));
+      particles = Array.from({ length: amount }, () => ({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        homeX: 0,
+        homeY: 0,
+        vx: (Math.random() - .5) * .18,
+        vy: (Math.random() - .5) * .18,
+        r: 1 + Math.random() * 1.35,
+        phase: Math.random() * Math.PI * 2
+      }));
+      particles.forEach(particle => { particle.homeX = particle.x; particle.homeY = particle.y; });
+    };
+    const resizeCanvas = () => {
+      ratio = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.round(width * ratio);
+      canvas.height = Math.round(height * ratio);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      makeParticles();
+    };
+    const drawLine = (a, b, alpha, lineWidth = .65) => {
+      context.beginPath();
+      context.moveTo(a.x, a.y);
+      context.lineTo(b.x, b.y);
+      context.strokeStyle = `rgba(20, 181, 210, ${alpha})`;
+      context.lineWidth = lineWidth;
+      context.stroke();
+    };
+    const drawLightning = (flash, time) => {
+      const age = (time - flash.born) / 650;
+      if (age >= 1) return;
+      const length = 54 + flash.seed * 32;
+      context.save();
+      context.globalAlpha = Math.max(0, 1 - age) * .8;
+      context.shadowColor = '#71f7ff';
+      context.shadowBlur = 14;
+      context.beginPath();
+      context.moveTo(flash.x, flash.y);
+      for (let point = 1; point <= 7; point += 1) {
+        const x = flash.x + Math.sin(flash.seed * 20 + point * 2.35) * 7 + point * 1.2;
+        const y = flash.y + (length / 7) * point;
+        context.lineTo(x, y);
+      }
+      context.strokeStyle = 'rgba(190, 252, 255, .92)';
+      context.lineWidth = 1.35;
+      context.stroke();
+      context.restore();
+    };
+    const spawnClickEffect = (x, y) => {
+      const born = performance.now();
+      clickWaves.push({ x, y, born, duration: 1250 });
+      flashes.push({ x, y: y - 18, born, seed: Math.random() });
+      const bubbleCount = width < 700 ? 8 : 14;
+      for (let index = 0; index < bubbleCount; index += 1) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 22 + Math.random() * 68;
+        bubbles.push({
+          x, y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 22 - Math.random() * 22,
+          radius: 2.5 + Math.random() * 7,
+          born,
+          duration: 900 + Math.random() * 650,
+          wobble: Math.random() * Math.PI * 2
+        });
+      }
+      if (clickWaves.length > 5) clickWaves.shift();
+      if (bubbles.length > 60) bubbles.splice(0, bubbles.length - 60);
+    };
+    const drawClickWave = (wave, time) => {
+      const progress = Math.min(1, (time - wave.born) / wave.duration);
+      const expand = progress < .58 ? progress / .58 : (1 - progress) / .42;
+      const radius = 20 + Math.max(0, expand) * 178;
+      const alpha = Math.sin(Math.PI * progress) * .42;
+      context.save();
+      context.strokeStyle = `rgba(77, 228, 240, ${alpha})`;
+      context.lineWidth = 1.15;
+      context.shadowColor = 'rgba(58, 220, 236, .55)';
+      context.shadowBlur = 12;
+      context.beginPath();
+      context.arc(wave.x, wave.y, radius, 0, Math.PI * 2);
+   
