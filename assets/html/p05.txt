@@ -1,0 +1,30 @@
+ <p>Обеспечиваем устойчивую работу сервисов и защищаем цифровой контур института каждый день.</p>
+              <div class="hero-buttons">
+                <a class="button button-primary" href="#directions">Узнать больше <span>→</span></a>
+                <a class="button button-ghost" href="#contacts">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="shell hero-ui">
+          <div class="hero-progress" aria-label="Переключение слайдов">
+            <span class="slide-number">01</span>
+            <div class="progress-track"><i></i></div>
+            <span>03</span>
+          </div>
+          <div class="slider-buttons">
+            <button class="slider-arrow hero-prev" type="button" aria-label="Предыдущий слайд">←</button>
+            <button class="slider-arrow hero-next" type="button" aria-label="Следующий слайд">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-rail">
+        <div class="shell hero-rail-inner">
+          <div class="rail-item"><strong>25+</strong><span>систем в эксплуатации</span></div>
+          <div class="rail-item"><strong>24/7</strong><span>стабильная цифровая среда</span></div>
+          <div class="rail-item"><strong>120+</strong><span>сотрудников обучено</span></div>
+          <a href="#about" class="rail-scroll"><i></i> Листайте ниже</a>
+        </div>
+  
