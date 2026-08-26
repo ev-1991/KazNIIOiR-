@@ -1,0 +1,21 @@
+ght">В цифрах</span><h2>Невидимая работа.<br><span>Заметный результат.</span></h2></div>
+        <div class="impact-numbers">
+          <article class="reveal"><strong data-count="25" data-suffix="+">0</strong><p>информационных систем<br>в эксплуатации</p></article>
+          <article class="reveal"><strong data-count="120" data-suffix="+">0</strong><p>сотрудников обучено<br>цифровым сервисам</p></article>
+          <article class="reveal"><strong data-count="3000" data-suffix="+" data-space="true">0</strong><p>пользователей<br>ежедневно</p></article>
+          <article class="reveal"><strong data-count="50" data-suffix="+">0</strong><p>реализованных<br>проектов</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-team" id="team">
+      <div class="shell">
+        <div class="section-heading team-heading reveal">
+          <div><span class="section-tag">04 · Команда</span><h2>Люди, которые<br><span>соединяют всё</span></h2></div>
+          <p>Нажмите на карточку сотрудника — выбранный специалист откроется в большом профиле.</p>
+        </div>
+
+        <div class="team-stage reveal" id="teamStage">
+          <article class="team-feature">
+            <div class="team-feature-photo"><img id="teamFeatureImage" src="img/team-aizhan-clean.jpg" alt="Баракбаева Айжан Айтулгановна" width="640" height="800"></div>
+            <div class="team-fea
