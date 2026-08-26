@@ -1,0 +1,21 @@
+сети, рабочие места и интеграции — надёжная технологическая основа института.</p><span class="card-arrow">↗</span></div>
+  </article>
+  <article class="direction-card reveal">
+    <div class="direction-media">
+      <img src="img/hero-platform.webp" alt="Медицинская аналитика и цифровые панели" loading="lazy">
+      <span class="card-index">02</span>
+      <div class="direction-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/><path d="m3 6 6-3 6 4 7-5"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>Аналитика и отчётность</h3><p>Понятные панели и отчёты для клинических, исследовательских и управленческих задач.</p><span class="card-arrow">↗</span></div>
+  </article>
+  <article class="direction-card reveal">
+    <div class="direction-media">
+      <img src="img/hero-analytics-team.jpg" alt="Цифровые медицинские сервисы" loading="lazy">
+      <span class="card-index">03</span>
+      <div class="direction-icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M9 6h6M10 18h4"/></svg></div>
+    </div>
+    <div class="direction-body"><h3>Цифровые сервисы</h3><p>Проектируем удобные инструменты для пациентов, сотрудников и подразделений.</p><span class="card-arrow">↗</span></div>
+  </article>
+  <article class="direction-card reveal">
+    <div class="direction-media">
+      <img src="img/hero-infrastructure.webp" a
