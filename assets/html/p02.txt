@@ -1,0 +1,27 @@
+-148-51 16Z"></path>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand brand-logo" href="#top" aria-label="KazIOR — на главную">
+        <img src="img/kazi.png" alt="Kazakh Oncology Institute" width="205" height="90">
+        <span class="brand-caption">КазНИИОиР<br>Отдел цифровизации</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#directions">Направления</a>
+        <a href="#projects">Проекты</a>
+        <a href="#team">Команда</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button music-toggle" type="button" aria-label="Включить музыку" aria-pressed="false" title="Фоновая музыка">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>
+          <span class="music-pulse" aria-hidden="true"></span>
+        </button>
+        <button class="icon-button contrast-toggle" type="button" aria-label="Включить режим повышенной читаемости" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.8"/></svg>
+        </button>
+        <a class="heade
