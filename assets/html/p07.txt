@@ -1,0 +1,17 @@
+ice-load"><small>Нагрузка</small><b id="serviceLoad">42%</b></span>
+                <span class="service-beat" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+              <svg viewBox="0 0 460 140" preserveAspectRatio="none" aria-hidden="true">
+                <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2de1d1" stop-opacity=".45"/><stop offset="1" stop-color="#2de1d1" stop-opacity="0"/></linearGradient></defs>
+                <path class="chart-area" d="M0 115C35 106 52 62 86 76s50 38 82 8 47-60 82-31 45 48 77 20 48-64 78-36 31 28 55 10v93H0Z"/>
+                <path class="chart-line" d="M0 115C35 106 52 62 86 76s50 38 82 8 47-60 82-31 45 48 77 20 48-64 78-36 31 28 55 10"/>
+              </svg>
+            </div>
+            <div class="status-stack">
+              <div class="status-item" data-status="mis"><i class="status-icon">✓</i><span><b>МИС</b><small>доступна</small></span><em></em></div>
+              <div class="status-item" data-status="analytics"><i class="status-icon">✓</i><span><b>Аналитика</b><small>обновлена</small></span><em></em></div>
+              <div class="status-item" data-status="network"><i class="status-icon">✓</i><span><b>Сеть</b><small>стабильна</small></span><em></em></div>
+            </div>
+          </div>
+        </div>
+        <div class="value-list"
